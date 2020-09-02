@@ -7,3 +7,23 @@ virtual NuGet.Protocol.HttpSource.Dispose(bool disposing) -> void
 virtual NuGet.Protocol.HttpSourceResult.Dispose(bool disposing) -> void
 NuGet.Protocol.LocalPackageInfo.LocalPackageInfo(NuGet.Packaging.Core.PackageIdentity identity, string path, System.DateTime lastWriteTimeUtc, System.Lazy<NuGet.Packaging.NuspecReader> nuspec, bool useFolder) -> void
 NuGet.Protocol.LocalPackageSearchMetadata.PackagePath.get -> string
+NuGet.Protocol.Core.Types.IPackageSearchMetadata.Vulnerabilities.get -> System.Collections.Generic.IEnumerable<NuGet.Protocol.PackageVulnerabilityMetadata>
+NuGet.Protocol.Core.Types.PackageSearchMetadataBuilder.ClonedPackageSearchMetadata.Vulnerabilities.get -> System.Collections.Generic.IEnumerable<NuGet.Protocol.PackageVulnerabilityMetadata>
+NuGet.Protocol.Core.Types.PackageSearchMetadataBuilder.ClonedPackageSearchMetadata.Vulnerabilities.set -> void
+NuGet.Protocol.LocalPackageSearchMetadata.Vulnerabilities.get -> System.Collections.Generic.IEnumerable<NuGet.Protocol.PackageVulnerabilityMetadata>
+NuGet.Protocol.PackageSearchMetadata.Vulnerabilities.get -> System.Collections.Generic.IEnumerable<NuGet.Protocol.PackageVulnerabilityMetadata>
+NuGet.Protocol.PackageSearchMetadataV2Feed.Vulnerabilities.get -> System.Collections.Generic.IEnumerable<NuGet.Protocol.PackageVulnerabilityMetadata>
+NuGet.Protocol.PackageVulnerabilityMetadata
+NuGet.Protocol.PackageVulnerabilityMetadata.PackageVulnerabilityMetadata() -> void
+NuGet.Protocol.PackageVulnerabilityMetadata.AdvisoryUrl.get -> System.Uri
+NuGet.Protocol.PackageVulnerabilityMetadata.Severity.get -> int
+const NuGet.Protocol.JsonProperties.AdvisoryUrl = "advisoryUrl" -> string
+const NuGet.Protocol.JsonProperties.Severity = "severity" -> string
+const NuGet.Protocol.JsonProperties.Vulnerabilities = "vulnerabilities" -> string
+NuGet.Protocol.Core.Types.IPackageSearchMetadata.ReadmeUrl.get -> System.Uri
+NuGet.Protocol.Core.Types.PackageSearchMetadataBuilder.ClonedPackageSearchMetadata.ReadmeUrl.get -> System.Uri
+NuGet.Protocol.Core.Types.PackageSearchMetadataBuilder.ClonedPackageSearchMetadata.ReadmeUrl.set -> void
+NuGet.Protocol.LocalPackageSearchMetadata.ReadmeUrl.get -> System.Uri
+NuGet.Protocol.PackageSearchMetadata.ReadmeUrl.get -> System.Uri
+NuGet.Protocol.PackageSearchMetadataV2Feed.ReadmeUrl.get -> System.Uri
+const NuGet.Protocol.JsonProperties.ReadmeUrl = "readmeUrl" -> string
