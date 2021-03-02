@@ -115,6 +115,7 @@ NuGet.VisualStudio.Internal.Contracts.PackageSearchMetadataContextInfo.PackageSe
 NuGet.VisualStudio.Internal.Contracts.PackageSearchMetadataContextInfo.PrefixReserved.get -> bool
 NuGet.VisualStudio.Internal.Contracts.PackageSearchMetadataContextInfo.ProjectUrl.get -> System.Uri?
 NuGet.VisualStudio.Internal.Contracts.PackageSearchMetadataContextInfo.Published.get -> System.DateTimeOffset?
+NuGet.VisualStudio.Internal.Contracts.PackageSearchMetadataContextInfo.ReadmeUrl.get -> System.Uri?
 NuGet.VisualStudio.Internal.Contracts.PackageSearchMetadataContextInfo.RecommenderVersion.get -> (string! modelVersion, string! vsixVersion)?
 NuGet.VisualStudio.Internal.Contracts.PackageSearchMetadataContextInfo.ReportAbuseUrl.get -> System.Uri?
 NuGet.VisualStudio.Internal.Contracts.PackageSearchMetadataContextInfo.RequireLicenseAcceptance.get -> bool
